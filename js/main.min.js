@@ -13,13 +13,3 @@ $(function() {
     }
   });
 });
-
-
-// web font
- $(function() {
-    WebFont.load({
-        custom: {
-            families: ['adelle', 'league gothic'], // font-family name
-            urls : ['css/main.css'] // url to css
-            });
-});
