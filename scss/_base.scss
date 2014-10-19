@@ -1,0 +1,197 @@
+/* 
+Base Rules
+	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
+*/
+
+body {
+    background-image: url('file:///Users/olgatertitsa/Documents/Classes/art336/art336-html-css-article-art-direction-01/img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-color: $background-color;
+    @include body-font-regular;
+    @include fontSize(14px);
+    line-height: 1.8;
+    //margin: 0 auto; /*margin on the top is 0, left and right its automatic*/
+    //max-width: 500px;
+    //width: 100%;
+}
+
+header, main, footer {
+    margin: 0 auto; /*margin on the top is 0, left and right its automatic*/
+    max-width: 500px;
+    width: 100%;
+}
+
+.byline {
+    @include fontSize(11px);
+    margin-bottom: 25px;
+}
+
+.byline a {
+    color: $key-color;
+    @include body-font-bold;
+    transition: color 350ms linear;
+    text-decoration: none;
+    letter-spacing: 2px; 
+}
+        
+.byline a:hover {
+    color: lighten($key-color,30%);
+    transition: color 300ms linear;   
+}
+
+main, footer {
+    padding: 3px 10px;
+    background-color: #FFF;
+    background-color: rgba(255,255,255,0.65);
+    border: 1.5px dotted;
+    border-color: lighten($key-color, 30%);
+    border-radius: 7px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    ///margin:0
+}
+
+article p:first-of-type {
+    @include fontSize(19px);
+    color: $key-color; 
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    @include fontSize(14px);
+}
+
+//Start nav styling
+
+nav {
+    background-color: $key-color;
+    border: 1px solid $background-color;
+    //border-radius: 6px;//
+    border-top: none;
+    padding: 4px 10px 6px 10px;
+    position: fixed;
+    width:100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* so we can display inline, but use block properties so that it responds to margin*/
+    margin: 0 6px 0 0;
+    padding: 0;
+}
+
+nav ul li:last-of-type {
+    margin-right: 0;
+}
+
+nav a {
+    color: #fff;
+    @include body-font-bold;
+    transition: color 350ms linear;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    color: lighten($key-color,30%);
+    transition: color 300ms linear;   
+}
+//End nav styling
+
+h1, h2, h3 {
+    @include headline-font;
+}
+
+header h1 {
+    @include fontSize(70px);
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #FFF;
+    text-shadow: 3px 3px rgba(76, 169, 229, 0.62); 
+}
+
+article h1 {
+    color: $link-color;
+    @include fontSize(66px);
+    margin: 48px 0 48px;
+    text-transform: capitalize;
+}
+
+article div {
+    color: $link-color;
+    @include fontSize(50px);
+    @include body-font-bold;
+    margin:30px 0;
+}
+
+blockquote {
+    background-color: lighten($key-color, 40%);
+    border-left: 10px solid $key-color;
+    @include fontSize(35px);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    line-height: 1.2;
+}
+blockquote:before {
+    color: $key-color;
+    content: open-quote;
+    font-size: 3em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+cite {
+    @include fontSize(15px);
+}
+
+main footer {
+//footer[role="complementary"]
+    border-bottom: 1px #989898 solid;
+    border-top: 1px #989898 solid;
+    color: #989898;
+    margin: 40px 0;
+    padding:10px 0;
+    @include fontSize(10px);
+}
+
+footer[role="contentinfo"] small {
+    display: block; // had to do this because small is an inline element//
+    border-top: 1px #989898 solid;
+    @include fontSize(16px);
+    margin-bottom: 20px;
+}
+
+footer {
+    @include fontSize(10px);
+    margin-top: 20px;
+    background-color: rgba(76, 169, 229, 0.62);
+    color: $background-color;
+}
+
+strong {
+    @include body-font-bold;
+    letter-spacing: 1px;
+    @include fontSize(12px);
+}
