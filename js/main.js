@@ -15,15 +15,11 @@ $(function() {
 });
 
 
-// bigtext.js
-$(function() {
+// web font
+ $(function() {
     WebFont.load({
         custom: {
-            families: ['Quicksand'], // font-family name
-            urls : ['css/main.css'] // URL to css
-        },
-        active: function() {
-            $('#bigtext').bigtext();
-        }
-    });
+            families: ['adelle', 'league gothic'], // font-family name
+            urls : ['css/main.css'] // url to css
+            });
 });

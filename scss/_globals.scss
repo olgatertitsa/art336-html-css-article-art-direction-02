@@ -17,27 +17,27 @@ Globals
 
 
 @mixin body-font-regular {
-    font-family: 'Open Sans', helvetica, sans-serif;
+    font-family: 'adelle', serif;
     font-style: normal;
     font-weight: 400;
 }
 
 @mixin body-font-italic {
-    font-family: 'Open Sans', helvetica, sans-serif;
+    font-family: 'adelle', serif;
     font-style: italic;
     font-weight: 400;
 }
 
 @mixin body-font-bold {
-   font-family: 'Open Sans', helvetica, sans-serif;
+   font-family: 'adelle', serif;
     font-style: normal;
     font-weight: 700;
 }
 
 @mixin headline-font {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'league-gothic', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 // Site Variables

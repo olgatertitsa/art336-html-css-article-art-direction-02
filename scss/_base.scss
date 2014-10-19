@@ -4,10 +4,10 @@ Base Rules
 */
 
 body {
-    background-image: url('file:///Users/olgatertitsa/Documents/Classes/art336/art336-html-css-article-art-direction-01/img/background.jpg');
+    background-image: url('file:///Applications/MAMP/htdocs/art336-html-css-article-art-direction-02/img/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: left;
     background-color: $background-color;
     @include body-font-regular;
     @include fontSize(14px);
