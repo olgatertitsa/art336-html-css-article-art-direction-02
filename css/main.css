@@ -371,7 +371,7 @@ Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
 body {
-  background-image: url("file:///Applications/MAMP/htdocs/art336-html-css-article-art-direction-02/img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
@@ -482,8 +482,8 @@ h1, h2, h3 {
   font-weight: 400; }
 
 header h1 {
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 75px;
+  font-size: 4.6875rem;
   margin: 0;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -492,10 +492,13 @@ header h1 {
   color: #000;
   text-shadow: 2px 2px #e8f2f3; }
 
+h1:first-of-type {
+  background-color: rgba(232, 242, 243, 0.41); }
+
 article h1 {
   color: #ff3181;
-  font-size: 66px;
-  font-size: 4.125rem;
+  font-size: 80px;
+  font-size: 5rem;
   margin: 48px 0 48px;
   text-transform: capitalize; }
 
